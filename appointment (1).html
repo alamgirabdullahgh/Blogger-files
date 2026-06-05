@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>রোগীর অ্যাপয়েন্টমেন্ট</title>
+</head>
+<body>
+
+<div class='appointment-box'>
+    
+    <div class='form-header'>
+        <div class='header-left'>
+            <div class='center-box'>
+                <label for='center-name'>সেন্টারের নাম</label>
+                <input id='center-name' name='center_name' type='text' placeholder='সেন্টারের নাম লিখুন'/>
+            </div>
+            <span class='header-title'>রোগীর তথ্য</span>
+        </div>
+
+        <div class='header-right'>
+            <div class='serial-box'>
+                <label for='serial'>সিরিয়াল নাম্বার</label>
+                <input id='serial' name='serial' readonly='readonly' type='text' value='Auto'/>
+            </div>
+            <div class='date-box'>
+                <label for='today-date'>আজকের তারিখ</label>
+                <input id='today-date' name='today_date' type='date'/>
+            </div>
+        </div>
+    </div>
+
+    <form action='#' method='POST'>
+        
+        <div class='form-group'>
+            <label for='name'>নাম</label>
+            <input id='name' name='name' required='required' type='text' placeholder='রোগীর সম্পূর্ণ নাম লিখুন'/>
+        </div>
+
+        <div class='form-row'>
+            <div class='form-group'>
+                <label for='phone'>নাম্বার</label>
+                <input id='phone' name='phone' required='required' type='tel' placeholder='মোবাইল নাম্বার'/>
+            </div>
+            <div class='form-group'>
+                <label for='age'>বয়স</label>
+                <input id='age' name='age' required='required' type='number' placeholder='বয়স'/>
+            </div>
+        </div>
+
+        <div class='form-group'>
+            <label for='division'>বিভাগ</label>
+            <select id='division' name='division' required='required'>
+                <option value=''>বিভাগ নির্বাচন করুন</option>
+                <option value='dhaka'>ঢাকা</option>
+                <option value='chattogram'>চট্টগ্রাম</option>
+                <option value='rajshahi'>রাজশাহী</option>
+                <option value='khulna'>খুলনা</option>
+                <option value='barishal'>বরিশাল</option>
+                <option value='sylhet'>সিলেট</option>
+                <option value='rangpur'>রংপুর</option>
+                <option value='mymensingh'>ময়মনসিংহ</option>
+            </select>
+        </div>
+
+        <div class='form-row'>
+            <div class='form-group'>
+                <label for='gender'>লিঙ্গ</label>
+                <select id='gender' name='gender' required='required'>
+                    <option value=''>নির্বাচন করুন</option>
+                    <option value='male'>পুরুষ</option>
+                    <option value='female'>মহিলা</option>
+                    <option value='other'>অন্যান্য</option>
+                </select>
+            </div>
+            <div class='form-group'>
+                <label for='schedule'>সিডিউল</label>
+                <input id='schedule' name='schedule' required='required' type='datetime-local'/>
+            </div>
+        </div>
+
+        <button type='submit'>অ্যাপয়েন্টমেন্ট নিশ্চিত করুন</button>
+    </form>
+</div>
+
+</body>
+</html>
